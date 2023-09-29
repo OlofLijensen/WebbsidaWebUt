@@ -1,12 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Min Hemsida</title>
+  <!-- Länk till Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <!-- Anpassade CSS-stilar -->
+  <style>
+    body {
+      padding-top: 70px; /* Justera padding för att undvika att innehållet döljs under den sticky navbaren */
+    }
+    .footer {
+      background-color: #f8f9fa;
+      text-align: center;
+      padding: 20px 0;
+    }
+  </style>
 </head>
 <body>
-    
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">Min Hemsida</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Hem</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Om oss</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Kontakt</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Innehåll -->
+  <div class="container">
+    <h1>Välkommen till vår hemsida</h1>
+    <p>Här kan du hitta information om vårt företag och våra tjänster.</p>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <span>&copy; 2023 Min Hemsida</span>
+    </div>
+  </footer>
+
+  <!-- Länk till Bootstrap JavaScript och jQuery -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </body>
 </html>
