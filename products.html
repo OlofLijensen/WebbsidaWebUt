@@ -3,18 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Min Hemsida</title>
+  <title>Kontakt</title>
   <!-- Länk till Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <!-- Anpassade CSS-stilar -->
   <style>
-    body {
+body {
       padding-top: 100px;
       background-color: #E3DCD2;
       color: #013328;
     }
     .navbar {
       background-color: #CC8B65;
+      position: fixed;
     }
     .navbar-brand {
       color: #E3DCD2;
@@ -33,13 +34,30 @@
       background-color: #013328;
       border-radius: 4px;
     }
+    .dropdown-item:hover{
+      background-color: #013328;
+      color: #E3DCD2;
+    }
+
+    .dropdown-item{
+      background-color: #343a40;
+      color: #E3DCD2;
+    }
+
+    .dropdown-menu{
+      background-color: #343a40;
+      color: #E3DCD2
+    }
     .footer {
       background-color: #100C0D;
       color: #E3DCD2;
       text-align: center;
       padding: 20px 0;
     }
+
   </style>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 </head>
 <body>
   <!-- Navbar -->
@@ -56,8 +74,13 @@
         <li class="nav-item">
           <a class="nav-link" href="about.html">Om oss</a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link" href="products.html">Products</a>
+        <li class="nav-item dropdown active">
+          <a class="nav-link dropdown-toggle active" href="products.html" data-bs-toggle="dropdown" aria-expanded="false">Produkter</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="products.html">T-Shirts</a></li>
+            <li><a class="dropdown-item" href="products.html">Underkläder</a></li>
+            <li><a class="dropdown-item" href="products.html">Kepsar</a></li>
+          </ul>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="contact.html">Kontakt</a>
@@ -68,12 +91,14 @@
 
 
 
+
     <!-- Innehåll -->
     <div class="container">
         <h1>Produkter
         </h1>
     </div>
 
+ 
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
@@ -84,5 +109,6 @@
   <!-- Länk till Bootstrap JavaScript och jQuery -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
