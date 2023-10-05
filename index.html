@@ -42,6 +42,8 @@ body {
     }
 
   </style>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 </head>
 <body>
   <!-- Navbar -->
@@ -58,8 +60,13 @@ body {
         <li class="nav-item">
           <a class="nav-link" href="about.html">Om oss</a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link" href="products.html">Products</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="products.html" data-bs-toggle="dropdown" aria-expanded="false">Produkter</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="products.html">T-Shirts</a></li>
+            <li><a class="dropdown-item" href="products.html">Underkläder</a></li>
+            <li><a class="dropdown-item" href="products.html">Kepsar</a></li>
+          </ul>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="contact.html">Kontakt</a>
@@ -92,5 +99,6 @@ body {
   <!-- Länk till Bootstrap JavaScript och jQuery -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
