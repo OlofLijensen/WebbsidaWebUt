@@ -51,11 +51,15 @@ body {
     padding: 20px 0;
 }
 
+.card{
+    margin: 20px;
+}
+
 #EmailDiv{
     position: relative;
     align-items: center;
-  }
+}
 
-  #Emails{
+#Emails{
     align-items: center;
-  }
+}
