@@ -2,7 +2,7 @@
 // variabel om hur den anluter samt med vad
 $servername = "localhost";
 $username = "root";
-$password = "NatgranD123!";
+$password = 
 $dbname = "emails";
 $email = $_POST["email"];  // använder post metod för att få data från html
 
