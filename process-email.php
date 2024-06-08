@@ -1,5 +1,5 @@
 <?php
-// variabel om hur den anluter samt med vad
+// variabel om hur den ansluter samt med vad
 $servername = "localhost";
 $username = "root";
 $password = 
